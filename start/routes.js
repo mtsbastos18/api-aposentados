@@ -20,5 +20,5 @@ Route.post('/register', 'AuthController.register');
 Route.post('/authenticate', 'AuthController.authenticate');
 
 Route.group(() => {
-    Route.resource("tweets", "TweetController").apiOnly().except('update');
+    Route.resource("services", "ServiceController").apiOnly();
 }).middleware('auth');
