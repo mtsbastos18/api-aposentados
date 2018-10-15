@@ -3,6 +3,12 @@
 const User = use('App/Models/User');
 
 class AuthController {
+
+    async index(){
+        const Users = await User.query().select('id', 'username').fetch();
+        return Users;
+    }
+
     async register({ request }){
         const data = request.only(['username','email','password']);
         
@@ -12,6 +18,7 @@ class AuthController {
 
         return user;
     }
+   
 
     async authenticate({ request, auth }){
         const { email, password } = request.all();

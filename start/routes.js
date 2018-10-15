@@ -17,8 +17,14 @@ const Route = use('Route');
 
 Route.post('/register', 'AuthController.register');
 
+Route.get('/users', 'AuthController.index').middleware('auth');
+
 Route.post('/authenticate', 'AuthController.authenticate');
 
 Route.group(() => {
     Route.resource("services", "ServiceController").apiOnly();
+}).middleware('auth');
+
+Route.group(() => {
+    Route.resource("instructor", "InstructorController").apiOnly().except('update').except('destroy');
 }).middleware('auth');
