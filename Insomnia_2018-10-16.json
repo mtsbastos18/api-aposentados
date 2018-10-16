@@ -1,0 +1,305 @@
+{
+	"_type": "export",
+	"__export_format": 3,
+	"__export_date": "2018-10-16T19:18:31.007Z",
+	"__export_source": "insomnia.desktop.app:v6.0.2",
+	"resources": [
+		{
+			"_id": "wrk_00440755205d4366938e8bd295354dee",
+			"created": 1539280120002,
+			"description": "",
+			"modified": 1539280120002,
+			"name": "Insomnia",
+			"parentId": null,
+			"_type": "workspace"
+		},
+		{
+			"_id": "env_4ef4c50b9af14dcaab4a841990d3a51f",
+			"color": null,
+			"created": 1539280120050,
+			"data": {},
+			"isPrivate": false,
+			"metaSortKey": 1539280120050,
+			"modified": 1539280120050,
+			"name": "New Environment",
+			"parentId": "wrk_00440755205d4366938e8bd295354dee",
+			"_type": "environment"
+		},
+		{
+			"_id": "jar_d68d8089d1574a8fa1cea8cfeddf3c10",
+			"cookies": [],
+			"created": 1539280120057,
+			"modified": 1539280120057,
+			"name": "Default Jar",
+			"parentId": "wrk_00440755205d4366938e8bd295354dee",
+			"_type": "cookie_jar"
+		},
+		{
+			"_id": "fld_623dafa355d34447b7f915f115279c02",
+			"created": 1539280162810,
+			"description": "",
+			"environment": {},
+			"metaSortKey": -1539280162810,
+			"modified": 1539280168746,
+			"name": "Api",
+			"parentId": "wrk_00440755205d4366938e8bd295354dee",
+			"_type": "request_group"
+		},
+		{
+			"_id": "req_4935b7a66b974aa8a28aaa015df4bdbf",
+			"authentication": {},
+			"body": {},
+			"created": 1539716248535,
+			"description": "",
+			"headers": [],
+			"isPrivate": false,
+			"metaSortKey": -1539716248535,
+			"method": "GET",
+			"modified": 1539716259834,
+			"name": "https://api-aposentados.herokuapp.com/users",
+			"parameters": [],
+			"parentId": "wrk_00440755205d4366938e8bd295354dee",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "https://api-aposentados.herokuapp.com/users",
+			"_type": "request"
+		},
+		{
+			"_id": "req_de8d0a2adee84bcc85be919f4d94601e",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"username\":\"José Silva\",\n\t\"email\":\"josesilva@gmail.com\",\n\t\"password\":\"Mateus1807\"\n}"
+			},
+			"created": 1539280214375,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_018e30346fb647cca54c6588020ed01d",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1539280214375,
+			"method": "POST",
+			"modified": 1539704850386,
+			"name": "New user",
+			"parameters": [],
+			"parentId": "fld_623dafa355d34447b7f915f115279c02",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://127.0.0.1:3333/register",
+			"_type": "request"
+		},
+		{
+			"_id": "req_40f4aaf5e3054207888fd1fbf5a3a33d",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"email\":\"mtsbastos18@gmail.com\",\n\t\"password\":\"Mateus1807\"\n}"
+			},
+			"created": 1539280339170,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_018e30346fb647cca54c6588020ed01d",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1539280214325,
+			"method": "POST",
+			"modified": 1539700648164,
+			"name": "Login",
+			"parameters": [],
+			"parentId": "fld_623dafa355d34447b7f915f115279c02",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://127.0.0.1:3333/authenticate",
+			"_type": "request"
+		},
+		{
+			"_id": "req_c536e8be544341bc97ed318daf19d2e3",
+			"authentication": {
+				"prefix": "",
+				"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjEsImlhdCI6MTUzOTI4MDM2Nn0.GHK2ADwjgkA0zHoQ3UanT18wTAg9L28wVMqP9NeWYS8",
+				"type": "bearer"
+			},
+			"body": {},
+			"created": 1539280385361,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_018e30346fb647cca54c6588020ed01d",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1539280214275,
+			"method": "GET",
+			"modified": 1539280532607,
+			"name": "List Services",
+			"parameters": [],
+			"parentId": "fld_623dafa355d34447b7f915f115279c02",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://127.0.0.1:3333/services",
+			"_type": "request"
+		},
+		{
+			"_id": "req_6e07c29382f545148dea1432e39887ce",
+			"authentication": {
+				"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjEsImlhdCI6MTUzOTI4MDM2Nn0.GHK2ADwjgkA0zHoQ3UanT18wTAg9L28wVMqP9NeWYS8",
+				"type": "bearer"
+			},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"service_name\":\"Aula de Canto\"\n}"
+			},
+			"created": 1539280436732,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_018e30346fb647cca54c6588020ed01d",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1539280214300,
+			"method": "POST",
+			"modified": 1539282560816,
+			"name": "New Service",
+			"parameters": [],
+			"parentId": "fld_623dafa355d34447b7f915f115279c02",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://127.0.0.1:3333/services",
+			"_type": "request"
+		},
+		{
+			"_id": "req_6eded5df3af647d786bbc565b4bb62b2",
+			"authentication": {
+				"prefix": "",
+				"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjEsImlhdCI6MTUzOTcwMDY2NX0.uCzmiESOJ53S3_TLhGW3XMWCJqEisB6BnvhYo8gjP-s",
+				"type": "bearer"
+			},
+			"body": {},
+			"created": 1539282695658,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_018e30346fb647cca54c6588020ed01d",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1539280214350,
+			"method": "GET",
+			"modified": 1539716760764,
+			"name": "List Users",
+			"parameters": [],
+			"parentId": "fld_623dafa355d34447b7f915f115279c02",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "https://api-aposentados.herokuapp.com/users",
+			"_type": "request"
+		},
+		{
+			"_id": "req_55f001c508d849adbd290fa448e561d6",
+			"authentication": {
+				"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjEsImlhdCI6MTUzOTI4NjA1M30.vb9--cEK8oqFUSWGFGqIH6lNd2LxveADD0q1uJCuFio",
+				"type": "bearer"
+			},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"user_id\":\"2\"\n}"
+			},
+			"created": 1539285921468,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_018e30346fb647cca54c6588020ed01d",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1539280214362.5,
+			"method": "POST",
+			"modified": 1539700636129,
+			"name": "New Instructor",
+			"parameters": [],
+			"parentId": "fld_623dafa355d34447b7f915f115279c02",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://127.0.0.1:3333/instructor",
+			"_type": "request"
+		},
+		{
+			"_id": "req_58471a6cfd3e480d8649f723ae75cbed",
+			"authentication": {
+				"prefix": "",
+				"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjEsImlhdCI6MTUzOTI4NjA1M30.vb9--cEK8oqFUSWGFGqIH6lNd2LxveADD0q1uJCuFio",
+				"type": "bearer"
+			},
+			"body": {},
+			"created": 1539286122389,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_018e30346fb647cca54c6588020ed01d",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1539280214337.5,
+			"method": "GET",
+			"modified": 1539704960454,
+			"name": "List Instructor",
+			"parameters": [],
+			"parentId": "fld_623dafa355d34447b7f915f115279c02",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://127.0.0.1:3333/instructor",
+			"_type": "request"
+		}
+	]
+}
