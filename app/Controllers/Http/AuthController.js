@@ -5,7 +5,7 @@ const User = use('App/Models/User');
 class AuthController {
 
     async index(){
-        const Users = await User.query().select('id', 'username').fetch();
+        const Users = await User.query().select('id', 'username','email').fetch();
         return Users;
     }
 
