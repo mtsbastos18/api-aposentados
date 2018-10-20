@@ -28,3 +28,8 @@ Route.group(() => {
 Route.group(() => {
     Route.resource("instructor", "InstructorController").apiOnly().except('update').except('destroy');
 }).middleware('auth');
+
+
+Route.group(() => {
+    Route.resource("associate", "AssociateController").apiOnly().except('update').except('destroy');
+}).middleware('auth');
